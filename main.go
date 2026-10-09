@@ -26,6 +26,8 @@ func main() {
 		cmd.Init(os.Args[2:])
 	case "config":
 		cmd.Config(os.Args[2:])
+	case "ping":
+		cmd.Ping(os.Args[2:])
 	default:
 		fmt.Fprintf(os.Stderr, "Unknown command: %s\n\n", os.Args[1])
 		printHelp()
@@ -43,6 +45,7 @@ func printHelp() {
 	fmt.Println("    review     Run a code review on the current git diff")
 	fmt.Println("    init       Initialize a new .codeturtle config")
 	fmt.Println("    config     Show current configuration")
+	fmt.Println("    ping       Test connection to configured LLM provider")
 	fmt.Println()
 	fmt.Println("OPTIONS:")
 	fmt.Println("    -h, --help       Print help")

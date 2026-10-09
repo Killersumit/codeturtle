@@ -1,0 +1,6 @@
+[provider]
+base_url = "https://api.llm7.io/v1"
+model = "minimax-m3"
+api_key_env = "LLM7_API_KEY"  
+max_tokens = 4096
+temperature = 0.2
