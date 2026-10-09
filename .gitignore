@@ -1,0 +1,31 @@
+# Compiled binary
+/codeturtle
+/codeturtle.exe
+
+# Go build artifacts
+*.test
+*.out
+*.exe
+
+# CodeTurtle runtime cache
+.codeturtle/cache/
+.codeturtle/tmp/
+
+# Environment / secrets (API keys)
+.env
+.env.local
+*.key
+*.pem
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
